@@ -1,0 +1,123 @@
+
+:root{
+    --asosiy-body-orqa-rangi:rgb(32, 44, 54);
+    --asosiy-header-orqa-rangi:#2B3844;
+    --asosiy-text-rangi:rgb(255,255,255)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+body{
+    font-family: "Nunito Sans";
+background-color: var(--asosiy-body-orqa-rangi);
+
+}
+.header__btn img{
+width: 20px;
+height: 20px;
+padding: 1px;
+}
+.header{
+    padding: 24px 0;
+background-color: var(--asosiy-header-orqa-rangi);
+box-shadow: 0px 2px 4px 0px #0000000f;
+}
+
+.container{
+max-width: 1280px;
+width: 100%; 
+margin: 0 auto;
+padding: 0 20px;
+}
+.header__nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header__btn{
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+font-size: 16px;
+font-weight: 600;
+line-height: 22px;
+}
+.mobile{
+display: none;
+
+}
+@media (max-width:500px){
+.desktop{
+    display: none;
+}
+    .mobile{
+        display: block;
+    }
+    .header__btn{
+        font-size: 12px;
+    }
+}
+.hero{
+    padding: 48px 0;
+}
+.hero__input{
+    padding: 20px 0 20px 32px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+max-width: 480px;
+width: 100%;
+border-radius: 5px;
+box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+background: var(--asosiy-header-orqa-rangi);
+
+}
+.input{
+background-color: transparent;
+border: none;
+outline: none;
+color: var(--asosiy-text-rangi);
+}
+.hero__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    gap: 50px;
+}
+.hero__box{
+    width: 264PX;
+}
+.hero__textbox{
+    padding: 25px;
+    border-radius: 5px;
+box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+background: var(--asosiy-header-orqa-rangi);
+}
+.hero__box img{
+    width: 264px;
+    height: 160px;
+    border-radius: 5px;
+    display: block; 
+}
+.hero__title{
+    color: rgb(255, 255, 255);
+font-family: Nunito Sans;
+font-size: 18px;
+font-weight: 800;
+line-height: 26px;
+
+}
+.dark__mode{
+    --asosiy-body-orqa-rangi:rgb(255, 0, 0);
+    --asosiy-header-orqa-rangi:#2600ff;
+    --asosiy-text-rangi:rgb(255,255,255)
+}
+@media(max-width: 615px){
+    .hero__box{
+        margin: 0 auto;
+    }
+}
